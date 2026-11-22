@@ -1,0 +1,47 @@
+{
+    "version":  "0.2.0",
+    "configurations":  [
+                           {
+                               "args":  [
+
+                                        ],
+                               "miDebuggerPath":  "D:\\ucrt64\\bin\\gdb.exe",
+                               "type":  "cppdbg",
+                               "cwd":  "${fileDirname}",
+                               "externalConsole":  false,
+                               "environment":  [
+                                                   {
+                                                       "value":  "D:\\ucrt64\\bin;${env:PATH}",
+                                                       "name":  "PATH"
+                                                   }
+                                               ],
+                               "name":  "C: debug active file",
+                               "MIMode":  "gdb",
+                               "stopAtEntry":  true,
+                               "preLaunchTask":  "C: build active file",
+                               "program":  "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                               "request":  "launch"
+                           },
+                           {
+                               "args":  [
+
+                                        ],
+                               "miDebuggerPath":  "D:\\ucrt64\\bin\\gdb.exe",
+                               "type":  "cppdbg",
+                               "cwd":  "${fileDirname}",
+                               "externalConsole":  false,
+                               "environment":  [
+                                                   {
+                                                       "value":  "D:\\ucrt64\\bin;${env:PATH}",
+                                                       "name":  "PATH"
+                                                   }
+                                               ],
+                               "name":  "C++: debug active file",
+                               "MIMode":  "gdb",
+                               "stopAtEntry":  true,
+                               "preLaunchTask":  "C++: build active file",
+                               "program":  "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                               "request":  "launch"
+                           }
+                       ]
+}

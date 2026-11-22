@@ -1,0 +1,6 @@
+{
+    "files.encoding":  "utf8",
+    "terminal.integrated.env.windows":  {
+                                            "PATH":  "D:\\ucrt64\\bin;${env:PATH}"
+                                        }
+}

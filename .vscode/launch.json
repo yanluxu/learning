@@ -1,0 +1,62 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "miDebuggerPath": "D:\\ucrt64\\bin\\gdb.exe",
+      "stopAtEntry": false,
+      "name": "Run or debug active C/C++ file",
+      "cwd": "${fileDirname}",
+      "environment": [
+        {
+          "value": "D:\\ucrt64\\bin;${env:PATH}",
+          "name": "PATH"
+        }
+      ],
+      "externalConsole": false,
+      "args": [],
+      "type": "cppdbg",
+      "request": "launch",
+      "preLaunchTask": "Build active C or C++ file",
+      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "MIMode": "gdb"
+    },
+    {
+      "args": [],
+      "miDebuggerPath": "D:\\ucrt64\\bin\\gdb.exe",
+      "type": "cppdbg",
+      "cwd": "${fileDirname}",
+      "externalConsole": false,
+      "environment": [
+        {
+          "value": "D:\\ucrt64\\bin;${env:PATH}",
+          "name": "PATH"
+        }
+      ],
+      "name": "C: debug active file",
+      "MIMode": "gdb",
+      "stopAtEntry": true,
+      "preLaunchTask": "C: build active file",
+      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "request": "launch"
+    },
+    {
+      "args": [],
+      "miDebuggerPath": "D:\\ucrt64\\bin\\gdb.exe",
+      "type": "cppdbg",
+      "cwd": "${fileDirname}",
+      "externalConsole": false,
+      "environment": [
+        {
+          "value": "D:\\ucrt64\\bin;${env:PATH}",
+          "name": "PATH"
+        }
+      ],
+      "name": "C++: debug active file",
+      "MIMode": "gdb",
+      "stopAtEntry": true,
+      "preLaunchTask": "C++: build active file",
+      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "request": "launch"
+    }
+  ]
+}
