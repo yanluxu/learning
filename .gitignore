@@ -1,1 +1,12 @@
-*.exe 
+# 编译生成的可执行文件与中间目标文件
+*.exe
+*.out
+*.o
+*.obj
+
+# CMake 编译目录（防止把大量临时编译缓存传上 GitHub）
+build/
+cmake-build-*/
+
+# VS Code 自动生成的备份文件夹
+.vscode/backup-*/
